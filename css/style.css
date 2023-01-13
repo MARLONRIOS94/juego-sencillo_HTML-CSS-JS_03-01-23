@@ -1,0 +1,80 @@
+:root{
+    --col-card-front:#CC0000;
+    --col-card-back:  #2ECC71 ;
+    --col-background:#000000;
+    --col-title: #0097A7;
+    --font-title:Tahoma, sans-serif;
+    
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: var(--col-background);
+}
+
+.title{
+    font-family:var(--font-title);
+    color:var(--col-title);
+    text-align: center;
+    margin:0px;
+}
+
+.game{
+    width: 680px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    perspective:1000px;
+}
+
+.card{
+    height: 145px;
+    width: 145px;
+    border: 2px solid var(--col-background);
+    transform-style: preserve-3d;
+    transition: .5s;
+}
+
+
+.part{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-size: 35px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+}
+
+.front {
+    background-color: var(--col-card-front);
+}
+
+.back {
+    background-color: var(--col-card-back);
+    transform: rotateY(180deg);
+}
+
+
+
+.button{
+    font-weight: bold;
+    font-family: var(--font-title);
+    background-color: var(--col-title);
+    border-style: double;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+
+/*volando... funcionara al hacer click */
+.rotate{
+    transform: rotateY(180deg);
+}
+
