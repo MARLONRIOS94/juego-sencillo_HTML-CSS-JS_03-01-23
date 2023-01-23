@@ -84,6 +84,7 @@ const cards = document.querySelectorAll('.card')
 button.addEventListener('click', () => {
 ramdon();
 
+
 for(let index of cards) {
     index.classList.remove('rotate')
 }
