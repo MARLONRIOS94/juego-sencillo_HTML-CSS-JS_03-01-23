@@ -1,6 +1,6 @@
 :root{
     --col-card-front:#CC0000;
-    --col-card-back:  #2ECC71 ;
+    --col-card-back:#ffff00;
     --col-background:#000000;
     --col-title: #4A148C;
     --font-title:Tahoma, sans-serif;
@@ -64,6 +64,7 @@ body {
 
 
 .button{
+    color:var(--col-card-back);
     font-weight: bold;
     font-family: var(--font-title);
     background-color: var(--col-title);
@@ -72,6 +73,16 @@ body {
     padding: 10px;
 }
 
+
+.score{
+    color:var(--col-card-back);
+    font-weight: bold;
+    font-family: var(--font-title);
+    background-color: var(--col-title);
+    border-radius: 40px;
+    padding: 8px;
+    margin:0px;
+}
 
 /*volando... funcionara al hacer click */
 .rotate{

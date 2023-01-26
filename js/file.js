@@ -13,6 +13,10 @@ let arrcard = [];
 // varaible boton reinicar juego
 const button = document.getElementById('button')
 
+// puntaje
+let score = 0 ;
+
+
 // arrays completo con las frutas
 let listFruit = ['🍓', '🍌', '🍎', '🍇', '🍎', '🍍', '🍓', '🍉', '🍉', '🍇', '🍌', '🍍']
 
