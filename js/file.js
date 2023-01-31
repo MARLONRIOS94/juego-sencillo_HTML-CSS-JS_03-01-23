@@ -14,7 +14,7 @@ let arrcard = [];
 const button = document.getElementById('button')
 
 // puntaje
-let score = 0 ;
+// let score = 0;
 
 
 // arrays completo con las frutas
@@ -93,3 +93,15 @@ for(let index of cards) {
     index.classList.remove('rotate')
 }
 })
+
+
+// funcion puntaje
+function calculateScore(numCorrect, numIncorrect) {
+    return numCorrect - (numIncorrect / 2);
+}
+
+// Ejemplo de uso
+let correct = 10;
+let incorrect = 3;
+let score = calculateScore(correct, incorrect);
+console.log(score); // imprimiría 8
