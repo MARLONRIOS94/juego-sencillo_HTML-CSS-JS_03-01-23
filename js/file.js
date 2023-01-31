@@ -100,8 +100,8 @@ function calculateScore(numCorrect, numIncorrect) {
     return numCorrect - (numIncorrect / 2);
 }
 
-// Ejemplo de uso
+
 let correct = 10;
 let incorrect = 3;
 let score = calculateScore(correct, incorrect);
-console.log(score); // imprimiría 8
+console.log(score);
